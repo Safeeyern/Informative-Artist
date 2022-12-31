@@ -1,0 +1,264 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #f4faf8
+}
+ul { 
+    list-style: none;
+
+}
+a {
+    text-decoration: none;
+}
+#nav {
+    display: flex;
+    flex: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: rgb(2, 2, 41);
+    }
+#nav .nav h1{
+    color: white;
+}
+#nav .nav{
+    display: flex;
+    margin-right: 10px;
+}
+#nav .nav a {
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: bold;
+    color: white
+}
+#nav .nav a:hover{
+    color: rgb(2, 2, 41);;
+    background-color: white;
+    border-radius: 20px;
+}
+.text-primary{
+    color: rgb(0, 162, 255);
+
+}
+.showcase {
+    background: url(../img/pexels-jose-aragones-2179666.jpg) no-repeat center center/cover;
+    height: 100vh;
+    position: relative;
+
+}
+#content h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 4rem;
+    padding: 20px 15px;
+    color: rgb(0, 162, 255);
+    font-weight: bolder;
+}
+#content p{
+    font-family:  'Edu NSW ACT Foundation', cursive;
+    font-size: 3rem;
+    padding: 20px 15px;
+    margin-top: -20px;
+    line-height: 1.2;
+    color: white;
+}
+
+.btn {
+    background-color: #001fff;
+    border-radius: 10px;
+    color: white;
+    padding: 8px 15px;
+    font-weight: bold;
+    font-size: 25px;
+    margin-left: 15px;
+    
+    
+}
+.showcase-content {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 80%;
+
+}
+
+.showcase::before {
+    content: '';
+    background: black;
+    opacity: 0.7;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+.showcase * {
+    z-index: 10;
+}
+#content .showcase-content * {
+    z-index: 10;
+}
+/* Contact Page */
+.contact-container{
+    padding: 2rem;
+
+}
+.form-group{
+    margin: 30px;
+}
+.form-group label{
+    display: block;
+    margin: 7px;
+    font-weight: bold;
+    
+}
+.form-group input, 
+.form-group textarea{
+    width: 50%;
+    padding: 20px;
+    border: 4px #ccc solid;
+}
+.form-group textarea{
+    line-height: 3rem;
+}
+.contact-container .btn{
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 10rem;
+}
+.footer{
+    background-color: rgb(2, 2, 41);;
+    line-height: 1.5rem;
+    margin-top: 10rem;
+   
+}
+.contact-info{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: white;
+    font-size: 1rem;
+    font-family:  'Edu NSW ACT Foundation', cursive;;
+}
+.company{
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* About Section */
+.about-container  {
+ background-color: #ccc;
+padding: 50px;
+
+}
+.about-container p {
+    
+    line-height: 1.5;
+    font-size: 1.4rem;   
+    text-align: center;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+.about-container h2 {
+    text-align: center;
+    padding: 1rem;
+    color:rgb(2, 2, 41);;
+    font-weight: bold;
+}
+@media (max-width: 736px) {
+    #nav {
+    display: flex;
+    flex-direction: column;  
+}
+
+#nav .nav h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+#nav .nav a {
+    padding: 10px 10px;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 5px;
+    margin: 0px 15px;
+}
+#nav .nav a:hover{
+    color: rgb(2, 2, 41);;
+    background-color: white;
+    border-radius: 7px;
+}
+#content h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    padding: 20px 15px;
+    color: white;
+    font-weight: bolder;
+}
+#content p{
+    font-family:  'Edu NSW ACT Foundation', cursive;
+    font-size: 30px;
+    padding: 20px 15px;
+    margin-top: -20px;
+    line-height: 3rem;
+    color: white;
+}
+/* About Section */
+.about-container  {
+    background-color: #ccc;
+    padding: 30px;
+   
+   
+   }
+   .about-container p {
+       line-height: 2rem;
+       
+       /* display: flex;
+       justify-content: center;
+       text-align: center;
+       align-items: center; */
+       font-family: Verdana, Geneva, Tahoma, sans-serif;
+       
+   }
+   .about-container h2 {
+       text-align: center;
+       padding: 1rem;
+       color:rgb(2, 2, 41);;
+       font-weight: bold;
+   }
+   /* Contact Page */
+.contact-container{
+    padding: 2rem;
+
+}
+
+.form-group{
+    margin: 20px;
+}
+.form-group label{
+    display: block;
+    margin: 5px;
+    font-weight: bold;
+    
+}
+.form-group input, 
+.form-group textarea{
+    width: 100%;
+    padding: 10px;
+    border: 2px #ccc solid;
+}
+.form-group textarea{
+    line-height: 3rem;
+}
+.contact-container a{
+    font-size: 1rem;
+    font-weight: bold;
+}
+}
